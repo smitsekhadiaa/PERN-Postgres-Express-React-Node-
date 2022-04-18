@@ -1,0 +1,27 @@
+\l ==> list all database in postgresql
+
+\c ==> move inside a database
+
+\dt ==> show table in database
+
+create database PERNtodo;  ==>cretae a database called PERNtodo
+
+create table todo(...);   ==> create a table called todo
+
+commands on command prompt:
+
+psql -U postgres  to open the postgres terminal
+
+1)  \l ->list all the databases present
+2)  \c jwtauth  ->connects too database jwtauth as user postgresql
+3)  \dt will list all the table inside jwtauth
+4) CREATE DATABASE PERNtodo
+5) \c perntodo (to use dataabae perntodo)
+6) CREATE TABLE todo(
+    todo_id SERIAL PRIMARY KEY;    --making todo_id as primary key
+    description VARCHAR(500);
+    );
+7) \dt will list all tables in todo database
+
+##now connecting todo database to our server
+see the db.js file
