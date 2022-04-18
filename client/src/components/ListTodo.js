@@ -52,7 +52,7 @@ const ListTodos = () => {
             <tr key={todo.todo_id}>
               <td>{todo.description}</td>
               <td>
-                <EditTodo todo={todo} />  //rendering entire edit todo component  everytime in each table row
+                <EditTodo todo={todo} />  
               </td>
               <td>
                 <button
